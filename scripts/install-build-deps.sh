@@ -29,4 +29,5 @@ $APT_COMMAND install -qy --no-install-recommends \
     libpoppler-qt5-dev \
     lintian \
     qtbase5-dev \
+    libkf5filemetadata-dev \
     qtdeclarative5-dev
