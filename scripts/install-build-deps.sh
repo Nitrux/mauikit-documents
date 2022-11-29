@@ -21,10 +21,11 @@ $APT_COMMAND install -qy --no-install-recommends \
     gettext \
     git \
     gnupg2 \
-    lintian \
     libkf5config-dev \
     libkf5coreaddons-dev \
     libkf5i18n-dev \
     libkf5kio-dev \
+    libpoppler-qt5-dev \
+    lintian \
     qtbase5-dev \
     qtdeclarative5-dev
