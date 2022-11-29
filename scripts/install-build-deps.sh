@@ -31,4 +31,5 @@ $APT_COMMAND install -qy --no-install-recommends \
     qtbase5-dev \
     libkf5filemetadata-dev \
     qtdeclarative5-private-dev \
+    qtbase5-private-dev \
     qtdeclarative5-dev
