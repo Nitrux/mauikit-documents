@@ -30,4 +30,5 @@ $APT_COMMAND install -qy --no-install-recommends \
     lintian \
     qtbase5-dev \
     libkf5filemetadata-dev \
+    qtdeclarative5-private-dev \
     qtdeclarative5-dev
