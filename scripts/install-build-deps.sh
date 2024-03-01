@@ -27,6 +27,7 @@ $APT_COMMAND install -qy --no-install-recommends \
     libkf5i18n-dev \
     libkf5kio-dev \
     libpoppler-qt5-dev \
+    libpoppler-private-dev \
     lintian \
     qtbase5-dev \
     libkf5filemetadata-dev \
