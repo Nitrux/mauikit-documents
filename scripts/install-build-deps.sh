@@ -25,6 +25,7 @@ BUILD_DEPS='
     libkf6coreaddons-dev
     libkf6filemetadata-dev
     libkf6i18n-dev
+    libkf6iconthemes-dev
     libkf6kio-dev
     libpoppler-private-dev
     libpoppler-qt6-dev
