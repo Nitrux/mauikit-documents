@@ -1,36 +1,41 @@
 #!/bin/bash
 
 if [ "$EUID" -ne 0 ]; then
-    APT_COMMAND="sudo apt-get"
+    APT_COMMAND="sudo apt"
 else
-    APT_COMMAND="apt-get"
+    APT_COMMAND="apt"
 fi
 
+BUILD_DEPS='
+    appstream
+    automake
+    autotools-dev
+    build-essential
+    checkinstall
+    cmake
+    curl
+    devscripts
+    equivs
+    extra-cmake-modules
+    gettext
+    git
+    gnupg2
+    libkf6archive-dev
+    libkf6config-dev
+    libkf6coreaddons-dev
+    libkf6filemetadata-dev
+    libkf6i18n-dev
+    libkf6kio-dev
+    libpoppler-private-dev
+    libpoppler-qt6-dev
+    lintian
+    qt6-base-dev
+    qt6-base-private-dev
+    qt6-declarative-dev
+    qt6-declarative-private-dev
+    qt6-multimedia-dev
+    qt6-svg-dev
+'
+
 $APT_COMMAND update -q
-$APT_COMMAND install -qy --no-install-recommends \
-    appstream \
-    automake \
-    autotools-dev \
-    build-essential \
-    checkinstall \
-    cmake \
-    curl \
-    devscripts \
-    equivs \
-    extra-cmake-modules \
-    gettext \
-    git \
-    gnupg2 \
-    libkf5archive-dev \
-    libkf5config-dev \
-    libkf5coreaddons-dev \
-    libkf5i18n-dev \
-    libkf5kio-dev \
-    libpoppler-qt5-dev \
-    libpoppler-private-dev \
-    lintian \
-    qtbase5-dev \
-    libkf5filemetadata-dev \
-    qtdeclarative5-private-dev \
-    qtbase5-private-dev \
-    qtdeclarative5-dev
+$APT_COMMAND install -y - --no-install-recommends $BUILD_DEPS
