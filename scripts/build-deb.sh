@@ -11,7 +11,7 @@ set -e
 
 # -- Download Source
 
-git clone --depth 1 --branch "$MAUIKIT_DOCUMENTS_BRANCH" https://invent.kde.org/maui/mauikit-documents.git
+git clone --depth 1 --branch "$MAUIKIT_DOCUMENTS_BRANCH" https://github.com/Nitrux/mauikit-documents-src.git
 
 rm -rf mauikit-documents/{LICENSE,README.md,metainfo.yml}
 
