@@ -35,7 +35,7 @@ cmake \
 	-DCMAKE_POSITION_INDEPENDENT_CODE=ON \
 	-DCMAKE_VERBOSE_MAKEFILE=ON \
 	-DCMAKE_INSTALL_LIBDIR="/usr/lib/${HOST_MULTIARCH}" \
-	../mauikit-documents/
+	../mauikit-documents-src/
 
 make -j"$(nproc)"
 
@@ -66,7 +66,7 @@ checkinstall -D -y \
 	--pkgrelease="1" \
 	--pkglicense=LGPL-3 \
 	--pkggroup=libs \
-	--pkgsource=mauikit-documents \
+	--pkgsource=mauikit-documents-src \
 	--pakdir=. \
 	--maintainer=uri_herrera@nxos.org \
 	--provides=mauikit-documents \
